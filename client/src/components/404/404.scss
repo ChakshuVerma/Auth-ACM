@@ -1,0 +1,57 @@
+$primary-color:  #fff;
+$font-size-404: 8rem;
+$secondary-color: #000;
+
+.container-404{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 1rem;
+
+    .text{
+        color: $primary-color;
+        font-weight: 700;
+        font-size: $font-size-404;
+        text-align: center;
+    }
+
+    .go-back-button{
+        background-color: $secondary-color;
+        padding: 1rem 3rem;
+        font-size: $font-size-404 - 4rem;
+        border-radius: 10px;
+        
+        a{
+            color: $primary-color;
+            cursor: pointer;
+        }
+
+        &:hover{
+            background-color: $primary-color;
+            box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+            transition: 0.5s;
+            a{
+                color: $secondary-color;
+                text-decoration: none;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1000px){
+    html{
+        font-size: 8px;
+    }
+}
+@media (max-width: 600px){
+    html{
+        font-size: 7px;
+    }
+}
+@media (max-width: 410px){
+    html{
+        font-size: 6px;
+    }
+}

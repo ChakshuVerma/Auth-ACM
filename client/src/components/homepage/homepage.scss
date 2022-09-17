@@ -1,0 +1,44 @@
+$primary-color: #fff;
+$secondary-color: #000;
+
+.homepage-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .app-name-container{
+        padding: 1rem 3rem;
+        
+        h1{
+            font-size: 20rem;
+            color: $primary-color;
+        }
+    }
+
+    .button-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1rem 3rem;
+
+        a{
+            font-size: 6rem;
+            color: $primary-color;
+            margin: 1rem 3rem;
+            padding: 1rem 3rem;
+            border-radius: 10px;
+            text-decoration: none;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $primary-color;
+                transition: 0.5s;
+                color: $secondary-color;
+                text-decoration: none;
+                transition: 0.5s;
+            }
+        }
+    }
+}
